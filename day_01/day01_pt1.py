@@ -1,3 +1,6 @@
+from typing import List
+
+
 def main():
     with open('./input.txt') as file:
         lines = file.readlines()
@@ -6,7 +9,7 @@ def main():
         print(sum(calibration_values))
 
 
-def only_numbers(string: str):
+def only_numbers(string: str) -> List[str]:
     return [c for c in string if c.isdigit()]
 
 
